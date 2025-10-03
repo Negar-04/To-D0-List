@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لیست کارها</title>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="planner">
+    <h1>📝  لیست کارهای من</h1>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="یک کار جدید بنویس">
+      <button id="addBtn">افزودن</button>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="جست‌وجوی کارها">
+      <select id="filterSelect">
+        <option value="all">همه</option>
+        <option value="completed">انجام‌شده</option>
+        <option value="pending">در انتظار</option>
+      </select>
+    </div>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
