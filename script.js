@@ -30,10 +30,8 @@ function renderTasks() {
 
   tasks
     .filter(task => {
-      // فیلتر جست‌وجو
       const matchesSearch = task.text.toLowerCase().includes(searchTerm);
 
-      // فیلتر وضعیت
       if (filter === 'completed' && !task.completed) return false;
       if (filter === 'pending' && task.completed) return false;
 
